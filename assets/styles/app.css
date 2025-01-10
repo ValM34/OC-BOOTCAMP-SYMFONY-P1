@@ -548,3 +548,23 @@ section#insurances h2 {
         padding: 50px 20px;
     }
 }
+
+/** FLASH MESSAGES */
+.alert-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.alert {
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.alert-error {
+    background-color: rgb(255, 188, 188);
+}
+
+.alert-success {
+    background-color: rgb(178, 255, 178);
+}
