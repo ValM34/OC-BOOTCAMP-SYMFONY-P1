@@ -16,20 +16,6 @@
 {% endblock %}
 
 {% block body %}
-	<div class="alert-container">
-		{% for message in app.flashes('success') %}
-			<div class="alert alert-success">
-				{{ message }}
-			</div>
-		{% endfor %}
-	</div>
-	<div class="alert-container">
-		{% for message in app.flashes('error') %}
-			<div class="alert alert-error">
-				{{ message }}
-			</div>
-		{% endfor %}
-	</div>
 	<section id="fleet">
 		<h2>Découvrez la flotte de véhicules chez Véhicloc</h2>
 		<p>Que vous ayez besoin d'une petite citadine agile, d'une berline élégante ou même d'un SUV spacieux, nous avons une variété de véhicules pour répondre à vos exigences.</p>

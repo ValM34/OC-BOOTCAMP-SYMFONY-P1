@@ -4,6 +4,20 @@
 {% endblock %}
 
 {% block body %}
+	<div class="alert-container">
+		{% for message in app.flashes('success') %}
+			<div class="alert alert-success">
+				{{ message }}
+			</div>
+		{% endfor %}
+	</div>
+	<div class="alert-container">
+		{% for message in app.flashes('error') %}
+			<div class="alert alert-error">
+				{{ message }}
+			</div>
+		{% endfor %}
+	</div>
 	<section id="car">
 		<a href="{{ path('home') }}">← Retour</a>
 		<h1>{{ car.name }}</h1>
@@ -31,9 +45,11 @@
 
 		<div class="total-rent">
 			<span>Total</span>
-			<span>{{ car.monthlyAmount }} €/mois</span>
+			<span>{{ car.monthlyAmount }}
+				€/mois</span>
 		</div>
-		<button class="btn-add">Louer pour {{ car.monthlyAmount }}€/mois</button>
+		<button class="btn-add">Louer pour
+			{{ car.monthlyAmount }}€/mois</button>
 		<!-- Bouton inactif -->
 	</section>
 
