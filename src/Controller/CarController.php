@@ -56,6 +56,7 @@ class CarController extends AbstractController
     } else {
       $this->addFlash('error', 'Erreur lors de la suppression de la voiture !');
     }
+    
     return $this->redirectToRoute('home');
   }
 }

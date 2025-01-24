@@ -28,10 +28,10 @@ class CarType extends AbstractType
       ])
       ->add('gearbox', EnumType::class, [
         'class' => CarGearbox::class,
-        'choice_label' => fn($choice) => match($choice) {
-          CarGearbox::AUTOMATIC => 'Automatique',
-          CarGearbox::MANUAL => 'Manuelle',
-        }
+        // 'choice_label' => fn($choice) => match($choice) {
+        //   CarGearbox::AUTOMATIC => 'Automatique',
+        //   CarGearbox::MANUAL => 'Manuelle',
+        // }
       ])
     ;
   }
